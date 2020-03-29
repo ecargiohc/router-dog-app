@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './DogList.css';
 
 class DogList extends Component {
     render() {
