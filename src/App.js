@@ -3,10 +3,9 @@ import DogList from './DogList';
 import DogDetails from './DogDetails';
 import {Switch, Route} from 'react-router-dom';
 import hazel from './images/hazel.jpg'
-import tubby from './images/whiskey.jpg'
+import tubby from './images/tubby.jpg'
 import whiskey from './images/whiskey.jpg'
 import './App.css';
-import DogDetails from './DogDetails';
 
 class App extends Component {
   static defaultProps = {
