@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './DogDetails.css';
 
 class DogDetails extends Component {
     render() {
