@@ -12,6 +12,7 @@ class DogDetails extends Component {
                             <img className="card-img-top" src={dog.src} alt={dog.name}/>
                             <div className="card-body">
                                 <h2 className="card-title">{dog.name}</h2>
+                                <h4 className="card-subtitle text-muted">{dog.age} years old.</h4>
                             </div>
                         </div>
                     </div>
