@@ -4,17 +4,17 @@ import {Link, NavLink} from 'react-router-dom';
 class Navbar extends Component {
     render() {
         const dogLinks = this.props.dogs.map(d => (
-            <li className='nav-item'>
-            <NavLink exact to={`/dogs/${d.name}`} className="nav-link" key={d.name}>
+            <li className='nav-item' key={d.name}>
+            <NavLink exact to={`/dogs/${d.name}`} className="nav-link">
                 {d.name}
             </NavLink>
             </li>
         ));
         return(
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a className="navbar-brand" href="something.com">
+                <Link className="navbar-brand" to="/dogs">
                     Dog 🐶 App!
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
