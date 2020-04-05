@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import Navbar from './Navbar';
-import DogList from './DogList';
-import DogDetails from './DogDetails';
 import hazel from './images/hazel.jpg'
 import tubby from './images/tubby.jpg'
 import whiskey from './images/whiskey.jpg'
@@ -44,14 +42,6 @@ class App extends Component {
   };
 
   render() {
-    const getDog = props => {
-      let name = props.match.params.name;
-      let currentDog = this.props.dogs.find(
-      dog => dog.name.toLowerCase() === name.toLowerCase()
-      );
-      return <DogDetails {...props} dog={currentDog}/>
-    }
-
     return (
       <div>
         <Navbar dogs={this.props.dogs}/>
