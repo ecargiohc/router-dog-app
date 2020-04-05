@@ -5,7 +5,7 @@ class Navbar extends Component {
     render() {
         const dogLinks = this.props.dogs.map(d => (
             <li className='nav-item'>
-            <NavLink to={`/dogs/${d.name}`} className="nav-link" key={d.name}>
+            <NavLink exact to={`/dogs/${d.name}`} className="nav-link" key={d.name}>
                 {d.name}
             </NavLink>
             </li>
@@ -29,8 +29,8 @@ class Navbar extends Component {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link to='/dogs' className="nav-link">
-                                Go Home!
+                            <Link exact to='/dogs' className="nav-link">
+                                Home!
                             </Link>
                         </li>
                         {dogLinks}
