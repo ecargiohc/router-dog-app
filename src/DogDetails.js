@@ -22,6 +22,9 @@ class DogDetails extends Component {
                                     </li>
                                 })}
                             </ul>
+                            <div className="card-body">
+                                Go Back!
+                            </div>
                         </div>
                     </div>
                     {/* <h1>{this.props.dog.name}</h1> */}
