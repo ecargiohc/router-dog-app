@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 class Navbar extends Component {
-
     render() {
+        const dogLinks = this.props.dogs.map(d => (
+            <li className='nav-item'>
+            <NavLink to={`/dogs/${d.name}`} className="nav-link" key={d.name}>
+                {d.name}
+            </NavLink>
+            </li>
+        ));
         return(
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a className="navbar-brand" href="something.com">
@@ -27,6 +33,7 @@ class Navbar extends Component {
                                 Go Home!
                             </Link>
                         </li>
+                        {dogLinks}
                     </ul>
                 </div>
             </nav>
