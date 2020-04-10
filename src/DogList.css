@@ -11,4 +11,16 @@
 
 .Dog .underline {
     text-decoration: none;
+
+    border: 4px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 10px;
+    position: relative;
 }
