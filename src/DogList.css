@@ -24,3 +24,22 @@
     margin: 10px;
     position: relative;
 }
+
+.underline::after {
+    width: 0%;
+    height: 4px;
+    display: block;
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 50%;
+    transition: left 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), 
+    width 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.Dog:hover .underline::after {
+    width: 100%;
+    top: 34px;
+    left: 0;
+}
